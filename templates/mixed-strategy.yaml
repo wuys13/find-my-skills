@@ -1,0 +1,77 @@
+name: mixed-strategy
+display_name: Mixed-Oriented
+description: Two-dimensional classification combining Workflow Stage × Professional Domain, providing the most comprehensive organization method, suitable for advanced users
+recommended_for:
+  - Advanced Users
+  - Users who need fine-grained classification
+  - Users managing a large number of skills
+
+dimensions:
+  - name: workflow_stage
+    display_name: Workflow Stage
+    weight: 25
+    categories:
+      - name: planning
+        display_name: Planning & Design
+        keywords: [规划, 设计, 架构, plan, design, architecture]
+
+      - name: implementing
+        display_name: Implementation & Development
+        keywords: [实现, 开发, 编码, implement, develop, code]
+
+      - name: reviewing
+        display_name: Review & Verification
+        keywords: [审查, 评审, 验证, review, verify, validate]
+
+      - name: documenting
+        display_name: Documentation
+        keywords: [文档, 说明, document, doc, documentation]
+
+  - name: professional_domain
+    display_name: Professional Domain
+    weight: 25
+    categories:
+      - name: bioinformatics
+        display_name: Bioinformatics
+        keywords: [生物, 基因, 蛋白质, 细胞, bio, gene, protein, cell]
+
+      - name: machine_learning
+        display_name: Machine Learning
+        keywords: [机器学习, 数据科学, 模型, ML, data science, model]
+
+      - name: academic_research
+        display_name: Academic Research
+        keywords: [学术, 论文, 研究, academic, paper, research]
+
+      - name: software_engineering
+        display_name: Software Engineering
+        keywords: [软件, 开发, 编程, software, programming, development]
+
+      - name: office_documents
+        display_name: Document Processing
+        keywords: [办公, 文档, docx, xlsx, pptx, office]
+
+cross_index:
+  enabled: true
+  description: Support cross-dimensional queries, such as "Bioinformatics + Planning Stage"
+
+examples:
+  - query: "Plan a bioinformatics project"
+    expected_categories:
+      - planning
+      - bioinformatics
+
+  - query: "Develop a machine learning model"
+    expected_categories:
+      - implementing
+      - machine_learning
+
+  - query: "Write an academic paper"
+    expected_categories:
+      - documenting
+      - academic_research
+
+  - query: "Review software code"
+    expected_categories:
+      - reviewing
+      - software_engineering

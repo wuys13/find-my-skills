@@ -1,0 +1,140 @@
+name: functional-strategy
+display_name: Functional-Oriented
+description: Organize tools by functional type, suitable for general users and cross-domain workers
+recommended_for:
+  - General Users
+  - Cross-Domain Workers
+  - Users who need to quickly find specific functions
+
+dimensions:
+  - name: functional_type
+    display_name: Functional Type
+    weight: 40
+    categories:
+      - name: create_generate
+        display_name: Create & Generate
+        description: Create new content, generate documents, code generation, and image generation
+        keywords:
+          - 创建
+          - 生成
+          - 制作
+          - create
+          - generate
+          - make
+          - build
+          - write
+          - compose
+          - design
+
+      - name: analyze_understand
+        display_name: Analyze & Understand
+        description: Data analysis, code analysis, text understanding, and pattern recognition
+        keywords:
+          - 分析
+          - 理解
+          - 识别
+          - analyze
+          - understand
+          - identify
+          - recognize
+          - interpret
+          - explore
+          - study
+
+      - name: transform_process
+        display_name: Transform & Process
+        description: Format conversion, data processing, image processing, and file conversion
+        keywords:
+          - 转换
+          - 处理
+          - 变换
+          - transform
+          - process
+          - convert
+          - modify
+          - edit
+          - manipulate
+
+      - name: plan_manage
+        display_name: Plan & Manage
+        description: Project planning, task management, progress tracking, and resource management
+        keywords:
+          - 规划
+          - 管理
+          - 计划
+          - 组织
+          - plan
+          - manage
+          - organize
+          - coordinate
+          - schedule
+          - track
+
+      - name: verify_test
+        display_name: Verify & Test
+        description: Code testing, quality assurance, verification, and review
+        keywords:
+          - 验证
+          - 测试
+          - 检查
+          - 审查
+          - verify
+          - test
+          - check
+          - validate
+          - review
+          - inspect
+          - quality
+
+      - name: query_search
+        display_name: Query & Search
+        description: Information query, database retrieval, literature search, and resource discovery
+        keywords:
+          - 查询
+          - 检索
+          - 搜索
+          - 查找
+          - query
+          - search
+          - find
+          - lookup
+          - retrieve
+          - database
+
+      - name: collaborate_version
+        display_name: Collaborate & Version Control
+        description: Git operations, version management, team collaboration, and code collaboration
+        keywords:
+          - 协作
+          - 版本
+          - 控制
+          - Git
+          - collaborate
+          - version
+          - control
+          - team
+          - commit
+          - merge
+          - branch
+
+examples:
+  - query: "Create a new document"
+    expected_category: create_generate
+
+  - query: "Analyze data trends"
+    expected_category: analyze_understand
+
+  - query: "Convert file format"
+    expected_category: transform_process
+
+  - query: "Plan project tasks"
+    expected_category: plan_manage
+
+  - query: "Test code quality"
+    expected_category: verify_test
+
+  - query: "Search literature"
+    expected_category: query_search
+
+  - query: "Commit code changes"
+    expected_category: collaborate_version

@@ -1,0 +1,158 @@
+name: domain-strategy
+display_name: Domain-Oriented
+description: Organize tools by professional research and development domains, suitable for researchers and domain professionals
+recommended_for:
+  - Researchers
+  - Data Scientists
+  - Bioinformaticians
+  - Machine Learning Engineers
+  - Medical Researchers
+
+dimensions:
+  - name: professional_domain
+    display_name: Professional Domain
+    weight: 40
+    categories:
+      - name: bioinformatics
+        display_name: Bioinformatics
+        description: Genomics, proteomics, transcriptomics, and biological data analysis
+        keywords:
+          - 生物
+          - 基因
+          - 蛋白质
+          - 细胞
+          - RNA
+          - DNA
+          - 测序
+          - bioinformatics
+          - genomics
+          - protein
+          - cell
+          - sequencing
+          - scanpy
+          - biopython
+          - molecular
+
+      - name: machine_learning
+        display_name: Machine Learning & Data Science
+        description: Data processing, model training, deep learning, and data visualization
+        keywords:
+          - 机器学习
+          - 数据科学
+          - 深度学习
+          - 模型
+          - 训练
+          - 数据分析
+          - machine learning
+          - data science
+          - deep learning
+          - model
+          - training
+          - pytorch
+          - tensorflow
+          - scikit
+
+      - name: academic_research
+        display_name: Academic Research & Papers
+        description: Literature review, paper writing, academic publishing, and citation management
+        keywords:
+          - 学术
+          - 论文
+          - 研究
+          - 文献
+          - 发表
+          - academic
+          - paper
+          - research
+          - publication
+          - literature
+          - citation
+          - peer-review
+          - scientific writing
+
+      - name: chemistry_drug
+        display_name: Chemistry & Drug Discovery
+        description: Cheminformatics, molecular design, drug discovery, and compound analysis
+        keywords:
+          - 化学
+          - 药物
+          - 分子
+          - 化合物
+          - chemistry
+          - drug
+          - molecule
+          - compound
+          - rdkit
+          - deepchem
+          - medicinal
+
+      - name: medical_clinical
+        display_name: Medicine & Clinical Research
+        description: Clinical research, medical imaging, pathology analysis, and treatment planning
+        keywords:
+          - 医学
+          - 临床
+          - 病理
+          - 治疗
+          - 影像
+          - medical
+          - clinical
+          - pathology
+          - treatment
+          - diagnosis
+          - healthcare
+
+      - name: software_engineering
+        display_name: Software Engineering
+        description: Web development, frontend/backend, testing/deployment, and code quality
+        keywords:
+          - 软件
+          - 开发
+          - 编程
+          - web
+          - 前端
+          - 后端
+          - software
+          - engineering
+          - development
+          - programming
+          - frontend
+          - backend
+
+      - name: office_documents
+        display_name: Office Document Processing
+        description: Creating and processing Word, Excel, PowerPoint, PDF, and other office documents
+        keywords:
+          - 办公
+          - 文档
+          - 表格
+          - 演示
+          - office
+          - document
+          - docx
+          - xlsx
+          - pptx
+          - pdf
+          - spreadsheet
+
+examples:
+  - query: "Analyze single-cell sequencing data"
+    expected_category: bioinformatics
+
+  - query: "Train a deep learning model"
+    expected_category: machine_learning
+
+  - query: "Write an academic paper"
+    expected_category: academic_research
+
+  - query: "Design drug molecules"
+    expected_category: chemistry_drug
+
+  - query: "Analyze medical images"
+    expected_category: medical_clinical
+
+  - query: "Develop a web application"
+    expected_category: software_engineering
+
+  - query: "Create a PowerPoint presentation"
+    expected_category: office_documents

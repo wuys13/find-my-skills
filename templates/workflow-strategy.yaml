@@ -1,0 +1,113 @@
+name: workflow-strategy
+display_name: Workflow-Oriented
+description: Organize tools by different stages of the project development process, suitable for software developers and project managers
+recommended_for:
+  - Software Developers
+  - Project Managers
+  - DevOps Engineers
+  - Full-Stack Developers
+
+dimensions:
+  - name: workflow_stage
+    display_name: Workflow Stage
+    weight: 40
+    categories:
+      - name: planning
+        display_name: Planning & Design Stage
+        description: Strategic planning, requirements analysis, and architecture design in the early stages of a project
+        keywords:
+          - 规划
+          - 设计
+          - 架构
+          - 边界
+          - 需求
+          - 分析
+          - boundary
+          - plan
+          - design
+          - architecture
+          - brainstorm
+          - hypothesis
+          - literature
+
+      - name: implementing
+        display_name: Implementation & Development Stage
+        description: Coding implementation, feature development, and unit testing
+        keywords:
+          - 实现
+          - 编码
+          - 开发
+          - 测试
+          - 调试
+          - implement
+          - code
+          - develop
+          - test
+          - debug
+          - tdd
+          - execution
+
+      - name: reviewing
+        display_name: Review & Verification Stage
+        description: Code review, quality assurance, and acceptance testing
+        keywords:
+          - 审查
+          - 评审
+          - 验证
+          - 检查
+          - review
+          - verification
+          - validation
+          - quality
+          - check
+          - peer
+
+      - name: documenting
+        display_name: Documentation Stage
+        description: Technical documentation, API documentation, user manuals, and project reports
+        keywords:
+          - 文档
+          - 说明
+          - 手册
+          - 报告
+          - document
+          - doc
+          - manual
+          - guide
+          - report
+          - writing
+          - readme
+          - changelog
+
+      - name: deploying
+        display_name: Deployment & Maintenance Stage
+        description: Continuous integration, deployment, and monitoring operations
+        keywords:
+          - 部署
+          - 发布
+          - 运维
+          - 监控
+          - deploy
+          - release
+          - publish
+          - ci
+          - cd
+          - devops
+          - docker
+          - kubernetes
+
+examples:
+  - query: "I need to plan a new project"
+    expected_category: planning
+
+  - query: "How to implement the code"
+    expected_category: implementing
+
+  - query: "Need to review code quality"
+    expected_category: reviewing
+
+  - query: "Write technical documentation"
+    expected_category: documenting
+
+  - query: "Prepare for project deployment"
+    expected_category: deploying

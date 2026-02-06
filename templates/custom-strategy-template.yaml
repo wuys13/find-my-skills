@@ -1,0 +1,78 @@
+name: custom-strategy
+display_name: Custom Strategy
+description: A custom classification strategy template that allows users to define classification dimensions and keywords based on personal needs
+recommended_for:
+  - Users with specific needs
+  - Users who need customized classification
+
+instructions: |
+  This is a custom strategy template. You can:
+  1. Copy this file and rename it
+  2. Modify the name and display_name
+  3. Add or modify dimensions and categories
+  4. Define keywords that suit your needs
+
+  Classification dimensions can be based on:
+  - Your workflow
+  - Your project types
+  - Your team structure
+  - Your technology stack
+  - Any dimension that makes sense to you
+
+dimensions:
+  - name: custom_dimension_1
+    display_name: Custom Dimension 1
+    weight: 30
+    categories:
+      - name: category_1a
+        display_name: Category 1A
+        description: Description of this category
+        keywords:
+          - 关键词1
+          - 关键词2
+          - keyword1
+          - keyword2
+
+      - name: category_1b
+        display_name: Category 1B
+        description: Description of this category
+        keywords:
+          - 关键词3
+          - 关键词4
+
+  - name: custom_dimension_2
+    display_name: Custom Dimension 2
+    weight: 20
+    categories:
+      - name: category_2a
+        display_name: Category 2A
+        keywords:
+          - 关键词5
+          - 关键词6
+
+      - name: category_2b
+        display_name: Category 2B
+        keywords:
+          - 关键词7
+          - 关键词8
+
+examples:
+  - query: "Example query 1"
+    expected_category: category_1a
+
+  - query: "Example query 2"
+    expected_category: category_2a
+
+tips: |
+  Recommendations when defining classifications:
+  - Category names should be concise and clear
+  - Keywords should cover both Chinese and English
+  - Weight totals should sum to 100 (if multiple dimensions)
+  - Avoid keyword overlap between categories
+  - Test whether your classification rules are effective
+
+  Keyword matching tips:
+  - Use technical names (e.g., pytorch, scanpy)
+  - Use functional verbs (e.g., analyze, create)
+  - Use domain terminology (e.g., genomics, ML)
+  - Consider synonyms and abbreviations

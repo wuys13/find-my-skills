@@ -1,0 +1,42 @@
+{
+  "name": "find-my-skills",
+  "version": "1.0.0",
+  "description": "An intelligent local skills recommendation system that helps you quickly find the most suitable tools from your installed Claude Code skills",
+  "main": "SKILL.md",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skills",
+    "recommendation",
+    "local-search",
+    "context-aware",
+    "bioinformatics",
+    "machine-learning",
+    "classification",
+    "workflow",
+    "ai-assistant"
+  ],
+  "author": "wuyushuai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuyushuai/find-my-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wuyushuai/find-my-skills/issues"
+  },
+  "homepage": "https://github.com/wuyushuai/find-my-skills#readme",
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "templates/",
+    "subskills/"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
