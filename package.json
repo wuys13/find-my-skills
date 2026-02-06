@@ -23,12 +23,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wuyushuai/find-my-skills.git"
+    "url": "https://github.com/wuys13/find-my-skills.git"
   },
   "bugs": {
-    "url": "https://github.com/wuyushuai/find-my-skills/issues"
+    "url": "https://github.com/wuys13/find-my-skills/issues"
   },
-  "homepage": "https://github.com/wuyushuai/find-my-skills#readme",
+  "homepage": "https://github.com/wuys13/find-my-skills#readme",
   "files": [
     "SKILL.md",
     "README.md",

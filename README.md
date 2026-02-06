@@ -20,14 +20,14 @@ A Claude skill that can be installed and used by others, helping users quickly f
 ### Via npx skills (Recommended)
 
 ```bash
-npx skills add wuyushuai/find-my-skills
+npx skills add wuys13/find-my-skills
 ```
 
 ### Manual Installation
 
 ```bash
 # Clone repository
-git clone https://github.com/wuyushuai/find-my-skills.git
+git clone https://github.com/wuys13/find-my-skills.git
 
 # Copy to Claude skills directory
 cp -r find-my-skills ~/.claude/skills/
@@ -44,6 +44,7 @@ First-time use requires initialization:
 ```
 
 Initialization will:
+
 - Scan local `~/.claude/skills/` and `~/.agents/skills/` directories
 - Extract metadata from each skill
 - Let you choose a classification strategy
@@ -52,13 +53,13 @@ Initialization will:
 
 ### 2. Choose Classification Strategy
 
-| Strategy | Suitable For | Features |
-|----------|-------------|----------|
-| **Workflow-Oriented** | Software Developers | Organized by development process (Planning→Implementation→Review→Documentation) |
-| **Domain-Oriented** | Researchers | Organized by professional domain (Bioinformatics, ML, etc.) |
-| **Functional-Oriented** | General Users | Organized by function type (Create, Analyze, Transform, etc.) |
-| **Mixed** | Advanced Users | Two-dimensional classification: Workflow × Domain |
-| **Custom** | Specific Needs | Define your own classification dimensions |
+| Strategy                      | Suitable For        | Features                                                                           |
+| ----------------------------- | ------------------- | ---------------------------------------------------------------------------------- |
+| **Workflow-Oriented**   | Software Developers | Organized by development process (Planning→Implementation→Review→Documentation) |
+| **Domain-Oriented**     | Researchers         | Organized by professional domain (Bioinformatics, ML, etc.)                        |
+| **Functional-Oriented** | General Users       | Organized by function type (Create, Analyze, Transform, etc.)                      |
+| **Mixed**               | Advanced Users      | Two-dimensional classification: Workflow × Domain                                 |
+| **Custom**              | Specific Needs      | Define your own classification dimensions                                          |
 
 ### 3. Start Using
 
@@ -120,6 +121,7 @@ Supporting:
 ### 1. Context-Aware Recommendation
 
 AI analyzes:
+
 - Conversation history
 - Project progress
 - Technology stack
@@ -131,6 +133,7 @@ Recommended skills fully match your project state.
 ### 2. Multi-Dimensional Classification
 
 Recommendation algorithm considers 4 dimensions:
+
 - **Workflow Stage** (40%)
 - **Professional Domain** (30%)
 - **File Type** (20%)
@@ -139,6 +142,7 @@ Recommendation algorithm considers 4 dimensions:
 ### 3. Flexible Classification Strategies
 
 5 preset strategies + custom:
+
 - Workflow-oriented
 - Domain-oriented
 - Functional-oriented
@@ -195,16 +199,17 @@ After initialization, `skills-catalog.md` will be generated in the current direc
 
 ## 🆚 Difference from find-skills
 
-| Feature | find-my-skills | find-skills |
-|---------|---------------|-------------|
-| **Data Source** | Locally installed skills | Online NPM/GitHub registry |
-| **Search Method** | Multi-dimensional intelligent matching | Keyword online search |
-| **Context-Aware** | ✅ Considers project background and progress | ❌ No |
-| **Recommendation Accuracy** | High (context-based) | Medium (general search) |
-| **Use Case** | Precise recommendation of existing tools | Discover and install new tools |
-| **Trigger Words** | "recommend", "suitable", "based on project" | "online", "search", "install", "new" |
+| Feature                           | find-my-skills                               | find-skills                          |
+| --------------------------------- | -------------------------------------------- | ------------------------------------ |
+| **Data Source**             | Locally installed skills                     | Online NPM/GitHub registry           |
+| **Search Method**           | Multi-dimensional intelligent matching       | Keyword online search                |
+| **Context-Aware**           | ✅ Considers project background and progress | ❌ No                                |
+| **Recommendation Accuracy** | High (context-based)                         | Medium (general search)              |
+| **Use Case**                | Precise recommendation of existing tools     | Discover and install new tools       |
+| **Trigger Words**           | "recommend", "suitable", "based on project"  | "online", "search", "install", "new" |
 
 **Usage Recommendation**:
+
 - 💡 Prioritize find-my-skills for local recommendations
 - 🔍 Use find-skills to search externally when not found locally
 
@@ -276,11 +281,13 @@ chmod +x ~/.agents/skills
 ### Create Custom Strategy
 
 1. Copy template:
+
 ```bash
 cp templates/custom-strategy-template.yaml templates/my-strategy.yaml
 ```
 
 2. Edit `my-strategy.yaml`:
+
 ```yaml
 name: my-strategy
 display_name: My Classification Strategy
@@ -330,24 +337,27 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-- GitHub Issues: [Submit Issues](https://github.com/wuyushuai/find-my-skills/issues)
-- Discussions: [GitHub Discussions](https://github.com/wuyushuai/find-my-skills/discussions)
+- GitHub Issues: [Submit Issues](https://github.com/wuys13/find-my-skills/issues)
+- Discussions: [GitHub Discussions](https://github.com/wuys13/find-my-skills/discussions)
 
 ## 🗺️ Roadmap
 
 ### v1.0 (Current)
+
 - ✅ Basic recommendation functionality
 - ✅ 5 preset classification strategies
 - ✅ Automatic index generation
 - ✅ Context-aware recommendation
 
 ### v1.1 (Planned)
+
 - [ ] AI-driven automatic classification
 - [ ] Recommendation result scoring and explanation
 - [ ] Web interface (optional)
 - [ ] Community strategy marketplace
 
 ### v2.0 (Future)
+
 - [ ] Collaborative filtering recommendation
 - [ ] Skill combination pattern recognition
 - [ ] Continuous learning and optimization
@@ -355,6 +365,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Get Started**: `npx skills add wuyushuai/find-my-skills` 🚀
-
-Made with ❤️ by [Wuyushuai](https://github.com/wuyushuai)
+**Get Started**: `npx skills add wuys13/find-my-skills` 🚀
